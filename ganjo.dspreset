@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.0.0">
+  <ui width="812" height="375" bgImage="Images/background.png" layoutMode="relative"
+      bgMode="top_left">
+    <tab name="main">
+      <labeled-knob x="445" y="75" width="80" height="82" textColor="ffffffff" 
+                    trackForegroundColor="ffffffff" trackBackgroundColor="66999999" 
+                    label="Attack" type="float" minValue="0.0" maxValue="4.0" value="0.01" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100" >
+        <binding type="amp" level="instrument" position="0" parameter="ENV_ATTACK" />
+      </labeled-knob>
+      <labeled-knob x="515" y="75" width="80" height="82" textColor="ffffffff" 
+                    trackForegroundColor="ffffffff" trackBackgroundColor="66999999" 
+                    label="Release" type="float" minValue="0.0" maxValue="20.0" value="20.0" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100" >
+        <binding type="amp" level="instrument" position="0" parameter="ENV_RELEASE" />
+      </labeled-knob>
+      <labeled-knob x="585" y="75" width="80" height="82" textColor="ffffffff" 
+                    trackForegroundColor="ffffffff" trackBackgroundColor="66999999" 
+                    label="Chorus" type="float" minValue="0.0" maxValue="1" value="0" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="instrument" position="1" parameter="FX_MIX" />
+      </labeled-knob>
+      <labeled-knob x="655" y="75" width="80" height="82" textColor="ffffffff" 
+                    trackForegroundColor="ffffffff" trackBackgroundColor="66999999"
+                    label="Tone" type="float" minValue="0" maxValue="1" value="1" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY"
+                 translation="table" 
+                 translationTable="0,33;0.3,150;0.4,450;0.5,1100;0.7,4100;0.9,11000;1.0001,22000"/>
+      </labeled-knob>
+	  <labeled-knob x="725" y="75" width="80" height="82" textColor="ffffffff" 
+	trackForegroundColor="ffffffff" trackBackgroundColor="66999999"  label="Reverb Mix" type="float" minValue="0" maxValue="1" value="0.0" textColor="ffffffff" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100" >
+  <binding type="effect" level="instrument" position="2" parameter="FX_MIX" translation="linear"  />
+</labeled-knob>
+
+<menu x="600" y="40"  width="200" height="30" requireSelection="true" placeholderText="Choose..." value="1">
+  <option name="Studio">
+    <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Studio.wav" />
+  </option>
+  <option name="Church">
+   <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Church.wav" />
+  </option>
+    <option name="Garage">
+   <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Garage.wav" />
+</option>
+    <option name="Spring">
+   <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Spring.wav" />
+</option>
+</menu>
+    </tab>
+	</ui>
+  <groups attack="0.000" decay="25" sustain="1.0" release="0.430" volume="-3dB">
+        <group>
+            <sample end="64219.000" hiNote="39" hiVel="127" loNote="38" loVel="1" path="ganjo Samples/Banjo_Common - D#3.wav" pitchKeyTrack="1.0000" rootNote="39" start="0.000"/>
+            <sample end="32897.000" hiNote="40" hiVel="127" loNote="40" loVel="1" path="ganjo Samples/Banjo_Common - E3.wav" pitchKeyTrack="1.0000" rootNote="40" start="0.000"/>
+            <sample end="42213.000" hiNote="41" hiVel="127" loNote="41" loVel="1" path="ganjo Samples/Banjo_Common - F3.wav" pitchKeyTrack="1.0000" rootNote="41" start="0.000"/>
+            <sample end="88522.000" hiNote="42" hiVel="127" loNote="42" loVel="1" path="ganjo Samples/Banjo_Common - F#3.wav" pitchKeyTrack="1.0000" rootNote="42" start="0.000"/>
+            <sample end="86083.000" hiNote="42" hiVel="127" loNote="42" loVel="1" path="ganjo Samples/Banjo_Common - F#3_2.wav" pitchKeyTrack="1.0000" rootNote="42" start="0.000"/>
+            <sample end="40068.000" hiNote="43" hiVel="127" loNote="43" loVel="1" path="ganjo Samples/Banjo_Common - G3.wav" pitchKeyTrack="1.0000" rootNote="43" start="0.000"/>
+            <sample end="54244.000" hiNote="44" hiVel="127" loNote="44" loVel="1" path="ganjo Samples/Banjo_Common - G#3.wav" pitchKeyTrack="1.0000" rootNote="44" start="0.000"/>
+            <sample end="69764.000" hiNote="44" hiVel="127" loNote="44" loVel="1" path="ganjo Samples/Banjo_Common - G#3_2.wav" pitchKeyTrack="1.0000" rootNote="44" start="0.000"/>
+            <sample end="55149.000" hiNote="45" hiVel="127" loNote="45" loVel="1" path="ganjo Samples/Banjo_Common - A3.wav" pitchKeyTrack="1.0000" rootNote="45" start="0.000"/>
+            <sample end="56567.000" hiNote="45" hiVel="127" loNote="45" loVel="1" path="ganjo Samples/Banjo_Common - A3_2.wav" pitchKeyTrack="1.0000" rootNote="45" start="0.000"/>
+            <sample end="47260.000" hiNote="46" hiVel="127" loNote="46" loVel="1" path="ganjo Samples/Banjo_Common - A#3.wav" pitchKeyTrack="1.0000" rootNote="46" start="0.000"/>
+            <sample end="47590.000" hiNote="47" hiVel="127" loNote="47" loVel="1" path="ganjo Samples/Banjo_Common - B3.wav" pitchKeyTrack="1.0000" rootNote="47" start="0.000"/>
+            <sample end="52515.000" hiNote="49" hiVel="127" loNote="48" loVel="1" path="ganjo Samples/Banjo_Common - C#4.wav" pitchKeyTrack="1.0000" rootNote="49" start="0.000"/>
+            <sample end="51379.000" hiNote="49" hiVel="127" loNote="48" loVel="1" path="ganjo Samples/Banjo_Common - C#4_2.wav" pitchKeyTrack="1.0000" rootNote="49" start="0.000"/>
+            <sample end="57493.000" hiNote="50" hiVel="127" loNote="50" loVel="1" path="ganjo Samples/Banjo_Common - D4.wav" pitchKeyTrack="1.0000" rootNote="50" start="0.000"/>
+            <sample end="55264.000" hiNote="51" hiVel="127" loNote="51" loVel="1" path="ganjo Samples/Banjo_Common - D#4.wav" pitchKeyTrack="1.0000" rootNote="51" start="0.000"/>
+            <sample end="38167.000" hiNote="52" hiVel="127" loNote="52" loVel="1" path="ganjo Samples/Banjo_Common - E4.wav" pitchKeyTrack="1.0000" rootNote="52" start="0.000"/>
+            <sample end="51437.000" hiNote="53" hiVel="127" loNote="53" loVel="1" path="ganjo Samples/Banjo_Common - F4.wav" pitchKeyTrack="1.0000" rootNote="53" start="0.000"/>
+            <sample end="72136.000" hiNote="54" hiVel="127" loNote="54" loVel="1" path="ganjo Samples/Banjo_Common - F#4_2.wav" pitchKeyTrack="1.0000" rootNote="54" start="0.000"/>
+            <sample end="30341.000" hiNote="54" hiVel="127" loNote="54" loVel="1" path="ganjo Samples/Banjo_Common - F#4_3.wav" pitchKeyTrack="1.0000" rootNote="54" start="0.000"/>
+            <sample end="60571.000" hiNote="54" hiVel="127" loNote="54" loVel="1" path="ganjo Samples/Banjo_Common - F#4_5.wav" pitchKeyTrack="1.0000" rootNote="54" start="0.000"/>
+            <sample end="68103.000" hiNote="54" hiVel="127" loNote="54" loVel="1" path="ganjo Samples/Banjo_Common - F#4_6.wav" pitchKeyTrack="1.0000" rootNote="54" start="0.000"/>
+            <sample end="66788.000" hiNote="54" hiVel="127" loNote="54" loVel="1" path="ganjo Samples/Banjo_Common - F#4_7.wav" pitchKeyTrack="1.0000" rootNote="54" start="0.000"/>
+            <sample end="42617.000" hiNote="55" hiVel="127" loNote="55" loVel="1" path="ganjo Samples/Banjo_Common - G4.wav" pitchKeyTrack="1.0000" rootNote="55" start="0.000"/>
+            <sample end="27705.000" hiNote="55" hiVel="127" loNote="55" loVel="1" path="ganjo Samples/Banjo_Common - G4_2.wav" pitchKeyTrack="1.0000" rootNote="55" start="0.000"/>
+            <sample end="42363.000" hiNote="56" hiVel="127" loNote="56" loVel="1" path="ganjo Samples/Banjo_Common - G#4.wav" pitchKeyTrack="1.0000" rootNote="56" start="0.000"/>
+            <sample end="24190.000" hiNote="56" hiVel="127" loNote="56" loVel="1" path="ganjo Samples/Banjo_Common - G#4_2.wav" pitchKeyTrack="1.0000" rootNote="56" start="0.000"/>
+            <sample end="26371.000" hiNote="56" hiVel="127" loNote="56" loVel="1" path="ganjo Samples/Banjo_Common - G#4_3.wav" pitchKeyTrack="1.0000" rootNote="56" start="0.000"/>
+            <sample end="55332.000" hiNote="56" hiVel="127" loNote="56" loVel="1" path="ganjo Samples/Banjo_Common - G#4_4.wav" pitchKeyTrack="1.0000" rootNote="56" start="0.000"/>
+            <sample end="64602.000" hiNote="56" hiVel="127" loNote="56" loVel="1" path="ganjo Samples/Banjo_Common - G#4_5.wav" pitchKeyTrack="1.0000" rootNote="56" start="0.000"/>
+            <sample end="63343.000" hiNote="56" hiVel="127" loNote="56" loVel="1" path="ganjo Samples/Banjo_Common - G#4_6.wav" pitchKeyTrack="1.0000" rootNote="56" start="0.000"/>
+            <sample end="29123.000" hiNote="57" hiVel="127" loNote="57" loVel="1" path="ganjo Samples/Banjo_Common - A4.wav" pitchKeyTrack="1.0000" rootNote="57" start="0.000"/>
+            <sample end="28090.000" hiNote="57" hiVel="127" loNote="57" loVel="1" path="ganjo Samples/Banjo_Common - A4_2.wav" pitchKeyTrack="1.0000" rootNote="57" start="0.000"/>
+            <sample end="47842.000" hiNote="57" hiVel="127" loNote="57" loVel="1" path="ganjo Samples/Banjo_Common - A4_3.wav" pitchKeyTrack="1.0000" rootNote="57" start="0.000"/>
+            <sample end="41127.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="51646.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_2.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="21756.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_3.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="30885.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_4.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="53693.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_5.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="42800.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_6.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="69514.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_7.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="70366.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_8.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="65493.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_9.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="68690.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_10.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="22920.000" hiNote="58" hiVel="127" loNote="58" loVel="1" path="ganjo Samples/Banjo_Common - A#4_11.wav" pitchKeyTrack="1.0000" rootNote="58" start="0.000"/>
+            <sample end="28702.000" hiNote="59" hiVel="127" loNote="59" loVel="1" path="ganjo Samples/Banjo_Common - B4.wav" pitchKeyTrack="1.0000" rootNote="59" start="0.000"/>
+            <sample end="29576.000" hiNote="59" hiVel="127" loNote="59" loVel="1" path="ganjo Samples/Banjo_Common - B4_2.wav" pitchKeyTrack="1.0000" rootNote="59" start="0.000"/>
+            <sample end="30457.000" hiNote="59" hiVel="127" loNote="59" loVel="1" path="ganjo Samples/Banjo_Common - B4_3.wav" pitchKeyTrack="1.0000" rootNote="59" start="0.000"/>
+            <sample end="54329.000" hiNote="59" hiVel="127" loNote="59" loVel="1" path="ganjo Samples/Banjo_Common - B4_4.wav" pitchKeyTrack="1.0000" rootNote="59" start="0.000"/>
+            <sample end="53152.000" hiNote="59" hiVel="127" loNote="59" loVel="1" path="ganjo Samples/Banjo_Common - B4_5.wav" pitchKeyTrack="1.0000" rootNote="59" start="0.000"/>
+            <sample end="21525.000" hiNote="60" hiVel="127" loNote="60" loVel="1" path="ganjo Samples/Banjo_Common - C5.wav" pitchKeyTrack="1.0000" rootNote="60" start="0.000"/>
+            <sample end="31157.000" hiNote="62" hiVel="127" loNote="61" loVel="1" path="ganjo Samples/Banjo_Common - C#5.wav" pitchKeyTrack="1.0000" rootNote="61" start="0.000"/>
+            <sample end="77635.000" hiNote="65" hiVel="127" loNote="63" loVel="1" path="ganjo Samples/Banjo_Common - D#5_2.wav" pitchKeyTrack="1.0000" rootNote="63" start="0.000"/>
+            <sample end="25740.000" hiNote="67" hiVel="127" loNote="66" loVel="1" path="ganjo Samples/Banjo_Common - G5.wav" pitchKeyTrack="1.0000" rootNote="67" start="0.000"/>
+            <sample end="28611.000" hiNote="69" hiVel="127" loNote="68" loVel="1" path="ganjo Samples/Banjo_Common - G#5.wav" pitchKeyTrack="1.0000" rootNote="68" start="0.000"/>
+            <sample end="71132.000" hiNote="69" hiVel="127" loNote="68" loVel="1" path="ganjo Samples/Banjo_Common - G#5_2.wav" pitchKeyTrack="1.0000" rootNote="68" start="0.000"/>
+            <sample end="66821.000" hiNote="70" hiVel="127" loNote="70" loVel="1" path="ganjo Samples/Banjo_Common - A#5.wav" pitchKeyTrack="1.0000" rootNote="70" start="0.000"/>
+            <sample end="39674.000" hiNote="72" hiVel="127" loNote="71" loVel="1" path="ganjo Samples/Banjo_Common - B5.wav" pitchKeyTrack="1.0000" rootNote="71" start="0.000"/>
+    </group>
+  </groups>
+  <effects>
+    <effect type="lowpass" frequency="22000.0"/>
+	<effect type="chorus"  mix="0.0" modDepth="0.2" modRate="0.2" />
+	<effect type="convolution" mix="0.5" irFile="IR/Studio.wav" />
+  </effects>
+  <midi>
+   
+    <cc number="1">
+      <binding level="ui" type="control" parameter="VALUE" position="3" 
+               translation="linear" translationOutputMin="0" 
+               translationOutputMax="1" />
+    </cc>
+  </midi>
+</DecentSampler>
+
